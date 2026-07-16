@@ -1,70 +1,19 @@
-```gitignore
-# Build artifacts and binaries
-*.dll
+```
+# Build artifacts
+bin/
+obj/
 *.exe
+*.dll
 *.pdb
-*.obj
-*.o
-*.so
-*.a
-*.class
-*.pyc
-__pycache__/
+*.userprefs
 
 # Dependencies
-node_modules/
-venv/
-.venv/
-.env
-.env.local
-*.env.*
+packages/
 
-# Logs and temporary files
+# Logs
 *.log
-*.tmp
-*.swp
-*.swo
 
 # OS generated files
 .DS_Store
 Thumbs.db
-
-# IDE specific
-.vscode/
-.idea/
-
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Distribution / packaging
-dist/
-build/
-target/
-.gradle/
-
-# Python cache
-.mypy_cache/
-.pytest_cache/
-
-# Compressed files
-*.zip
-*.gz
-*.tar
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
-*.zst
-*.lz4
-*.lzh
-*.cab
-*.arj
-*.rpm
-*.deb
-*.Z
-*.lz
-*.lzo
 ```

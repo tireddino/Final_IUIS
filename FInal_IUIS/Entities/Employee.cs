@@ -2,9 +2,9 @@ using System;
 
 namespace FInal_IUIS.Entities
 {
-    public class Instructor
+    public class Employee
     {
-        public string InstructorId { get; set; }
+        public string EmployeeId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string MiddleName { get; set; }
@@ -16,6 +16,7 @@ namespace FInal_IUIS.Entities
         public string Department { get; set; }
         public string Position { get; set; }
         public DateTime DateHired { get; set; }
+        public decimal Salary { get; set; }
         public bool IsActive { get; set; }
     }
 }
