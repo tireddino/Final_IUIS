@@ -16,5 +16,10 @@ namespace FInal_IUIS.Forms
         {
             InitializeComponent();
         }
+
+        private void btnCourses_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

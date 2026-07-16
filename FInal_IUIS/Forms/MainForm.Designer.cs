@@ -94,6 +94,7 @@ namespace FInal_IUIS.Forms
             this.btnCourses.Text = "📖 Courses";
             this.btnCourses.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCourses.UseVisualStyleBackColor = false;
+            this.btnCourses.Click += new System.EventHandler(this.btnCourses_Click);
             // 
             // btnInstructors
             // 
