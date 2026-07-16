@@ -46,6 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Appointment.cs" />
+    <Compile Include="Entities\Attendance.cs" />
+    <Compile Include="Entities\Book.cs" />
+    <Compile Include="Entities\Borrowing.cs" />
+    <Compile Include="Entities\Clearance.cs" />
+    <Compile Include="Entities\Counseling.cs" />
+    <Compile Include="Entities\Employee.cs" />
+    <Compile Include="Entities\MedicalRecord.cs" />
+    <Compile Include="Entities\Payment.cs" />
+    <Compile Include="Entities\Scholarship.cs" />
+    <Compile Include="Entities\Subject.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Entities\Violation.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +101,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Data\books.json" />
+    <None Include="Data\borrowings.json" />
+    <None Include="Data\counseling.json" />
+    <None Include="Data\enrollments.json" />
+    <None Include="Data\payments.json" />
+    <None Include="Data\subjects.json" />
+    <None Include="Data\violations.json" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
