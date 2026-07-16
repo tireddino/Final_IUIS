@@ -3,32 +3,44 @@
 *.obj
 *.exe
 *.dll
-*.pdb
-*.user
-*.aps
-*.ilk
-*.iobj
-*.ipdb
-*.tlog
-*.log
-*.tmp
+*.so
+*.a
+*.out
+*.pyc
+*.class
+*.o
 
 # Dependencies
-packages/
-bin/
-obj/
+node_modules/
+venv/
+.venv/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+target/
+.gradle/
 
-# User-specific files
-.vs/
-*.userprefs
-*.suo
-*.user
-*.lock
-!*.cs  # Don't ignore C# source files
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
 
-# OS generated files
+# System files
 .DS_Store
 Thumbs.db
-desktop.ini
-$RECYCLE.BIN/
+.env
+.env.local
+*.env.*
+
+# Logs and coverage
+*.log
+coverage/
+htmlcov/
+.coverage
+
+# Distribution files
+dist/
+build/
 ```

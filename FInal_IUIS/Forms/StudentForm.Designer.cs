@@ -2,8 +2,15 @@ namespace FInal_IUIS.Forms
 {
     partial class StudentForm
     {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -13,19 +20,25 @@ namespace FInal_IUIS.Forms
             base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StudentForm));
             this.panelHeader = new System.Windows.Forms.Panel();
             this.lblSubtitle = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelSearch = new System.Windows.Forms.Panel();
+            this.cmbFilter = new System.Windows.Forms.ComboBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblSearchIcon = new System.Windows.Forms.Label();
-            this.cmbFilter = new System.Windows.Forms.ComboBox();
             this.panelContent = new System.Windows.Forms.Panel();
             this.dgvStudents = new System.Windows.Forms.DataGridView();
             this.panelFooter = new System.Windows.Forms.Panel();
@@ -36,219 +49,305 @@ namespace FInal_IUIS.Forms
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnExport = new System.Windows.Forms.Button();
-            
-            // ============================================
-            // PANEL HEADER - WinUI 3 Style with Accent Color
-            // ============================================
+            this.panelHeader.SuspendLayout();
+            this.panelSearch.SuspendLayout();
+            this.panelContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
+            this.panelFooter.SuspendLayout();
+            this.flowLayoutPanelButtons.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(109)))), ((int)(((byte)(245)))));
+            this.panelHeader.Controls.Add(this.lblSubtitle);
+            this.panelHeader.Controls.Add(this.lblTitle);
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHeader.Height = 100;
-            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(47, 109, 245); // WinUI Blue accent
+            this.panelHeader.Location = new System.Drawing.Point(0, 0);
+            this.panelHeader.Name = "panelHeader";
             this.panelHeader.Padding = new System.Windows.Forms.Padding(30, 20, 30, 0);
-            
-            // Title Label - Large, bold, modern typography
+            this.panelHeader.Size = new System.Drawing.Size(1280, 100);
+            this.panelHeader.TabIndex = 0;
+            // 
+            // lblSubtitle
+            // 
+            this.lblSubtitle.AutoSize = true;
+            this.lblSubtitle.Font = new System.Drawing.Font("Segoe UI Variable", 11F, System.Drawing.FontStyle.Regular);
+            this.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(220)))), ((int)(((byte)(255)))));
+            this.lblSubtitle.Location = new System.Drawing.Point(32, 52);
+            this.lblSubtitle.Name = "lblSubtitle";
+            this.lblSubtitle.Size = new System.Drawing.Size(520, 20);
+            this.lblSubtitle.TabIndex = 1;
+            this.lblSubtitle.Text = "Manage student records, enrollment status, and personal information";
+            // 
+            // lblTitle
+            // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI Variable", 26F, System.Drawing.FontStyle.SemiBold);
             this.lblTitle.ForeColor = System.Drawing.Color.White;
             this.lblTitle.Location = new System.Drawing.Point(30, 18);
-            this.lblTitle.Text = "Student Management";
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(240, 48);
             this.lblTitle.TabIndex = 0;
-            
-            // Subtitle Label - Smaller, lighter text for context
-            this.lblSubtitle.AutoSize = true;
-            this.lblSubtitle.Font = new System.Drawing.Font("Segoe UI Variable", 11F, System.Drawing.FontStyle.Regular);
-            this.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(200, 220, 255);
-            this.lblSubtitle.Location = new System.Drawing.Point(32, 52);
-            this.lblSubtitle.Text = "Manage student records, enrollment status, and personal information";
-            this.lblSubtitle.TabIndex = 1;
-            
-            // ============================================
-            // SEARCH PANEL - Modern rounded search bar
-            // ============================================
-            this.panelSearch.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSearch.Height = 60;
+            this.lblTitle.Text = "Student Management";
+            // 
+            // panelSearch
+            // 
             this.panelSearch.BackColor = System.Drawing.Color.White;
+            this.panelSearch.Controls.Add(this.cmbFilter);
+            this.panelSearch.Controls.Add(this.txtSearch);
+            this.panelSearch.Controls.Add(this.lblSearchIcon);
+            this.panelSearch.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSearch.Location = new System.Drawing.Point(0, 100);
+            this.panelSearch.Name = "panelSearch";
             this.panelSearch.Padding = new System.Windows.Forms.Padding(30, 10, 30, 10);
-            
-            // Search Icon Label (simulated with text)
-            this.lblSearchIcon.AutoSize = true;
-            this.lblSearchIcon.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14F);
-            this.lblSearchIcon.ForeColor = System.Drawing.Color.FromArgb(120, 120, 120);
-            this.lblSearchIcon.Text = "\uE721"; // Search icon from Segoe MDL2 Assets
-            this.lblSearchIcon.Location = new System.Drawing.Point(45, 20);
-            this.lblSearchIcon.Size = new System.Drawing.Size(20, 20);
-            this.lblSearchIcon.TabIndex = 2;
-            
-            // Search TextBox - Rounded corners simulation with padding
-            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Variable", 12F, System.Drawing.FontStyle.Regular);
-            this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(30, 30, 30);
-            this.txtSearch.BackColor = System.Drawing.Color.FromArgb(243, 243, 243);
-            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSearch.Location = new System.Drawing.Point(75, 18);
-            this.txtSearch.Size = new System.Drawing.Size(350, 27);
-            this.txtSearch.Padding = new System.Windows.Forms.Padding(15, 8, 15, 8);
-            this.txtSearch.TabIndex = 3;
-            this.txtSearch.PlaceholderText = "Search by name, ID, or course...";
-            this.txtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
-            
-            // Filter ComboBox
+            this.panelSearch.Size = new System.Drawing.Size(1280, 60);
+            this.panelSearch.TabIndex = 1;
+            // 
+            // cmbFilter
+            // 
+            this.cmbFilter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.cmbFilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbFilter.Font = new System.Drawing.Font("Segoe UI Variable", 11F, System.Drawing.FontStyle.Regular);
-            this.cmbFilter.ForeColor = System.Drawing.Color.FromArgb(30, 30, 30);
-            this.cmbFilter.BackColor = System.Drawing.Color.FromArgb(243, 243, 243);
             this.cmbFilter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbFilter.Font = new System.Drawing.Font("Segoe UI Variable", 11F);
+            this.cmbFilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.cmbFilter.FormattingEnabled = true;
+            this.cmbFilter.Items.AddRange(new object[] {
+            "All Students",
+            "Active",
+            "Inactive",
+            "Graduated"});
             this.cmbFilter.Location = new System.Drawing.Point(450, 18);
+            this.cmbFilter.Name = "cmbFilter";
             this.cmbFilter.Size = new System.Drawing.Size(200, 30);
             this.cmbFilter.TabIndex = 4;
-            this.cmbFilter.Items.AddRange(new object[] { "All Students", "Active", "Inactive", "Graduated" });
             this.cmbFilter.SelectedIndexChanged += new System.EventHandler(this.CmbFilter_SelectedIndexChanged);
-            
-            // ============================================
-            // CONTENT PANEL - Light background for content area
-            // ============================================
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearch.Font = new System.Drawing.Font("Segoe UI Variable", 12F);
+            this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtSearch.Location = new System.Drawing.Point(75, 18);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.PlaceholderText = "Search by name, ID, or course...";
+            this.txtSearch.Size = new System.Drawing.Size(350, 27);
+            this.txtSearch.TabIndex = 3;
+            this.txtSearch.TextChanged += new System.EventHandler(this.TxtSearch_TextChanged);
+            // 
+            // lblSearchIcon
+            // 
+            this.lblSearchIcon.AutoSize = true;
+            this.lblSearchIcon.Font = new System.Drawing.Font("Segoe MDL2 Assets", 14F);
+            this.lblSearchIcon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.lblSearchIcon.Location = new System.Drawing.Point(45, 20);
+            this.lblSearchIcon.Name = "lblSearchIcon";
+            this.lblSearchIcon.Size = new System.Drawing.Size(20, 20);
+            this.lblSearchIcon.TabIndex = 2;
+            this.lblSearchIcon.Text = "\uE721";
+            // 
+            // panelContent
+            // 
+            this.panelContent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(249)))), ((int)(((byte)(249)))));
+            this.panelContent.Controls.Add(this.dgvStudents);
             this.panelContent.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContent.BackColor = System.Drawing.Color.FromArgb(249, 249, 249); // WinUI light gray
+            this.panelContent.Location = new System.Drawing.Point(0, 160);
+            this.panelContent.Name = "panelContent";
             this.panelContent.Padding = new System.Windows.Forms.Padding(30, 0, 30, 30);
-            
-            // ============================================
-            // DATA GRID VIEW - WinUI 3 styled table
-            // ============================================
-            this.dgvStudents.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvStudents.BackgroundColor = System.Drawing.Color.White;
-            this.dgvStudents.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvStudents.RowHeadersVisible = false;
+            this.panelContent.Size = new System.Drawing.Size(1280, 480);
+            this.panelContent.TabIndex = 2;
+            // 
+            // dgvStudents
+            // 
             this.dgvStudents.AllowUserToAddRows = false;
             this.dgvStudents.AllowUserToDeleteRows = false;
             this.dgvStudents.AllowUserToResizeRows = false;
-            this.dgvStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStudents.MultiSelect = false;
-            this.dgvStudents.ReadOnly = true;
-            
-            // Default cell style
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Variable", 11F, System.Drawing.FontStyle.Regular);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(30, 30, 30);
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(220, 235, 255);
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(30, 30, 30);
-            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle1;
-            
-            // Alternating row style
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(250, 250, 250);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(220, 235, 255);
-            this.dgvStudents.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
-            
-            // Column header style - Modern flat appearance
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Variable", 11F, System.Drawing.FontStyle.SemiBold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(47, 109, 245);
-            dataGridViewCellStyle3.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dgvStudents.BackgroundColor = System.Drawing.Color.White;
+            this.dgvStudents.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvStudents.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            
             this.dgvStudents.ColumnHeadersHeight = 45;
             this.dgvStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Variable", 11F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle1.Format = "N0";
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvStudents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvStudents.EnableHeadersVisualStyles = false;
-            this.dgvStudents.GridColor = System.Drawing.Color.FromArgb(235, 235, 235);
-            
-            // Row height for better readability
+            this.dgvStudents.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(235)))), ((int)(((byte)(235)))));
+            this.dgvStudents.Location = new System.Drawing.Point(30, 0);
+            this.dgvStudents.MultiSelect = false;
+            this.dgvStudents.Name = "dgvStudents";
+            this.dgvStudents.ReadOnly = true;
+            this.dgvStudents.RowHeadersVisible = false;
             this.dgvStudents.RowTemplate.Height = 45;
-            
-            // Selection visual
-            this.dgvStudents.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(220, 235, 255);
-            this.dgvStudents.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(30, 30, 30);
-            
-            // ============================================
-            // FOOTER PANEL - Action buttons area
-            // ============================================
-            this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelFooter.Height = 80;
+            this.dgvStudents.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvStudents.Size = new System.Drawing.Size(1220, 450);
+            this.dgvStudents.TabIndex = 0;
+            // 
+            // panelFooter
+            // 
             this.panelFooter.BackColor = System.Drawing.Color.White;
+            this.panelFooter.Controls.Add(this.flowLayoutPanelButtons);
+            this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelFooter.Location = new System.Drawing.Point(0, 640);
+            this.panelFooter.Name = "panelFooter";
             this.panelFooter.Padding = new System.Windows.Forms.Padding(30, 15, 30, 15);
-            
-            // Flow Layout Panel for buttons
-            this.flowLayoutPanelButtons.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanelButtons.FlowDirection = System.Windows.Forms.FlowDirection.LeftToRight;
-            this.flowLayoutPanelButtons.WrapContents = false;
-            this.flowLayoutPanelButtons.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
-            this.flowLayoutPanelButtons.BackColor = System.Drawing.Color.Transparent;
-            
-            // Button Base Style Helper
-            Action<System.Windows.Forms.Button, System.Drawing.Color, string> configureButton = (btn, color, text) =>
-            {
-                btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-                btn.FlatAppearance.BorderSize = 0;
-                btn.FlatAppearance.MouseOverBackColor = ControlPaint.Light(color, 0.1f);
-                btn.BackColor = color;
-                btn.ForeColor = System.Drawing.Color.White;
-                btn.Font = new System.Drawing.Font("Segoe UI Variable", 11F, System.Drawing.FontStyle.SemiBold);
-                btn.Size = new System.Drawing.Size(130, 42);
-                btn.Cursor = System.Windows.Forms.Cursors.Hand;
-                btn.Text = text;
-                btn.UseVisualStyleBackColor = false;
-            };
-            
-            // Button - New (Green)
-            configureButton(this.btnNew, System.Drawing.Color.FromArgb(16, 185, 129), "+ New Student");
-            this.btnNew.Margin = new System.Windows.Forms.Padding(0, 0, 12, 0);
-            this.btnNew.TabIndex = 5;
-            
-            // Button - Save (Blue)
-            configureButton(this.btnSave, System.Drawing.Color.FromArgb(47, 109, 245), "💾 Save");
-            this.btnSave.Margin = new System.Windows.Forms.Padding(0, 0, 12, 0);
-            this.btnSave.TabIndex = 6;
-            
-            // Button - Edit (Purple)
-            configureButton(this.btnEdit, System.Drawing.Color.FromArgb(139, 92, 246), "✏️ Edit");
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(0, 0, 12, 0);
-            this.btnEdit.TabIndex = 7;
-            
-            // Button - Delete (Red)
-            configureButton(this.btnDelete, System.Drawing.Color.FromArgb(239, 68, 68), "🗑️ Delete");
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(0, 0, 12, 0);
-            this.btnDelete.TabIndex = 8;
-            
-            // Button - Refresh (Gray)
-            configureButton(this.btnRefresh, System.Drawing.Color.FromArgb(100, 100, 100), "🔄 Refresh");
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(0, 0, 12, 0);
-            this.btnRefresh.TabIndex = 9;
-            
-            // Button - Export (Teal)
-            configureButton(this.btnExport, System.Drawing.Color.FromArgb(20, 184, 166), "📊 Export");
-            this.btnExport.Margin = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            this.btnExport.TabIndex = 10;
-            
-            // Add buttons to flow layout
+            this.panelFooter.Size = new System.Drawing.Size(1280, 80);
+            this.panelFooter.TabIndex = 3;
+            // 
+            // flowLayoutPanelButtons
+            // 
             this.flowLayoutPanelButtons.Controls.Add(this.btnNew);
             this.flowLayoutPanelButtons.Controls.Add(this.btnSave);
             this.flowLayoutPanelButtons.Controls.Add(this.btnEdit);
             this.flowLayoutPanelButtons.Controls.Add(this.btnDelete);
             this.flowLayoutPanelButtons.Controls.Add(this.btnRefresh);
             this.flowLayoutPanelButtons.Controls.Add(this.btnExport);
-            
-            // ============================================
-            // FORM SETTINGS
-            // ============================================
+            this.flowLayoutPanelButtons.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanelButtons.FlowDirection = System.Windows.Forms.FlowDirection.LeftToRight;
+            this.flowLayoutPanelButtons.Location = new System.Drawing.Point(30, 15);
+            this.flowLayoutPanelButtons.Name = "flowLayoutPanelButtons";
+            this.flowLayoutPanelButtons.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.flowLayoutPanelButtons.Size = new System.Drawing.Size(1220, 50);
+            this.flowLayoutPanelButtons.TabIndex = 0;
+            this.flowLayoutPanelButtons.WrapContents = false;
+            // 
+            // btnNew
+            // 
+            this.btnNew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(185)))), ((int)(((byte)(129)))));
+            this.btnNew.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNew.FlatAppearance.BorderSize = 0;
+            this.btnNew.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(210)))), ((int)(((byte)(145)))));
+            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNew.Font = new System.Drawing.Font("Segoe UI Variable", 11F, System.Drawing.FontStyle.SemiBold);
+            this.btnNew.ForeColor = System.Drawing.Color.White;
+            this.btnNew.Location = new System.Drawing.Point(3, 8);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(130, 42);
+            this.btnNew.TabIndex = 5;
+            this.btnNew.Text = "+ New Student";
+            this.btnNew.UseVisualStyleBackColor = false;
+            this.btnNew.Click += new System.EventHandler(this.BtnNew_Click);
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(109)))), ((int)(((byte)(245)))));
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(120)))), ((int)(((byte)(255)))));
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI Variable", 11F, System.Drawing.FontStyle.SemiBold);
+            this.btnSave.ForeColor = System.Drawing.Color.White;
+            this.btnSave.Location = new System.Drawing.Point(139, 8);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(130, 42);
+            this.btnSave.TabIndex = 6;
+            this.btnSave.Text = "💾 Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.BtnSave_Click);
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(92)))), ((int)(((byte)(246)))));
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(105)))), ((int)(((byte)(255)))));
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Segoe UI Variable", 11F, System.Drawing.FontStyle.SemiBold);
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(275, 8);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(130, 42);
+            this.btnEdit.TabIndex = 7;
+            this.btnEdit.Text = "✏️ Edit";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.BtnEdit_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(68)))), ((int)(((byte)(68)))));
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("Segoe UI Variable", 11F, System.Drawing.FontStyle.SemiBold);
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(411, 8);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(130, 42);
+            this.btnDelete.TabIndex = 8;
+            this.btnDelete.Text = "🗑️ Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(120)))), ((int)(((byte)(120)))));
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI Variable", 11F, System.Drawing.FontStyle.SemiBold);
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(547, 8);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(130, 42);
+            this.btnRefresh.TabIndex = 9;
+            this.btnRefresh.Text = "🔄 Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.BtnRefresh_Click);
+            // 
+            // btnExport
+            // 
+            this.btnExport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(184)))), ((int)(((byte)(166)))));
+            this.btnExport.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExport.FlatAppearance.BorderSize = 0;
+            this.btnExport.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(200)))), ((int)(((byte)(180)))));
+            this.btnExport.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExport.Font = new System.Drawing.Font("Segoe UI Variable", 11F, System.Drawing.FontStyle.SemiBold);
+            this.btnExport.ForeColor = System.Drawing.Color.White;
+            this.btnExport.Location = new System.Drawing.Point(683, 8);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(130, 42);
+            this.btnExport.TabIndex = 10;
+            this.btnExport.Text = "📊 Export";
+            this.btnExport.UseVisualStyleBackColor = false;
+            this.btnExport.Click += new System.EventHandler(this.BtnExport_Click);
+            // 
+            // StudentForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.panelContent);
             this.Controls.Add(this.panelFooter);
             this.Controls.Add(this.panelSearch);
             this.Controls.Add(this.panelHeader);
-            
-            this.panelHeader.Controls.Add(this.lblTitle);
-            this.panelHeader.Controls.Add(this.lblSubtitle);
-            this.panelSearch.Controls.Add(this.lblSearchIcon);
-            this.panelSearch.Controls.Add(this.txtSearch);
-            this.panelSearch.Controls.Add(this.cmbFilter);
-            this.panelContent.Controls.Add(this.dgvStudents);
-            this.panelFooter.Controls.Add(this.flowLayoutPanelButtons);
-            
             this.MinimumSize = new System.Drawing.Size(900, 600);
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Name = "StudentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Student Management - IUIS";
-            this.Icon = null; // Set appropriate icon if available
+            this.panelHeader.ResumeLayout(false);
+            this.panelHeader.PerformLayout();
+            this.panelSearch.ResumeLayout(false);
+            this.panelSearch.PerformLayout();
+            this.panelContent.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).EndInit();
+            this.panelFooter.ResumeLayout(false);
+            this.flowLayoutPanelButtons.ResumeLayout(false);
+            this.ResumeLayout(false);
+
         }
 
-        // Controls
+        #endregion
+
         private System.Windows.Forms.Panel panelHeader;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblSubtitle;
