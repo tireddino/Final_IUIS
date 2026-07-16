@@ -16,4 +16,8 @@ packages/
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Visual Studio temporary files (Fixes the permission error)
+.vs/
+
 ```
