@@ -1,3 +1,5 @@
+using System;
+
 namespace FInal_IUIS.Entities
 {
     public class Instructor
